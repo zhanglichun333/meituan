@@ -1,7 +1,7 @@
 # meituan-app
 
 > 项目主要以Vue SSR+Koa2为主，来实现美团网项目,涉及Vue2.5、Nuxt、Koa2、element-ui、Mongodb、redis等
-实现美团首页+search搜索+登录注册+切换城市
+>实现美团首页+search搜索+登录注册+切换城市
 
 ## Build Setup
 
