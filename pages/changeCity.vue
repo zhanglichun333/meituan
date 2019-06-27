@@ -54,6 +54,7 @@ export default {
       province: [],  //所有的省份
       city: [],      //根据省份获取城市
       cities: [],    //获取所有的城市
+      cities1: [],   //下拉框的所有城市
       list: ['北京', '上海', '广州', '深圳', '天津', '西安', '重庆', '杭州', '南京', '武汉', '成都'],
       list1: 'ABCDEFGHIJKLMNOPQRSTUVWYZ'.split(''),
       block: []
@@ -69,11 +70,6 @@ export default {
           label: item.name
         }
       })
-    },
-    // 监听cvalue的变化，改变城市地址
-    cvalue: function(newCvalue) {
-      this.$store.commit('geo/setCity', 'newCvalue')
-      // location.href = '/'
     }
   },
   methods: {
@@ -82,21 +78,24 @@ export default {
     }),
     // 点击下拉框，弹出所有的城市，根据输入的城市进行搜索
     querySearchAsync:_.debounce(async function (query, cb) {
-      this.cities = this.cities.map(item => {
+      this.cities1 = this.cities.map(item => {
         return {
           value: item.name
         }
       })
-      cb(this.cities.filter(item => item.value.indexOf(query) > -1))
+      cb(this.cities1.filter(item => item.value.indexOf(query) > -1))
     }, 200),
     //根据输入的城市跳转页面
     handleSelect(item) {
       this.$store.commit('geo/setCity', item.value)
-      // location.href = '/'
+      location.href = '/'
     },
-    select () {
+    async select () {
       const isSelect = this.$refs.currentCity.value
-      this.$store.commit('geo/setCity', isSelect)
+      if (isSelect) {
+        this.$store.commit('geo/setCity', isSelect)
+        location.href = '/'
+      }
     }
   },
   //1.获取所有的数据，所有的省份 2.获取所有的城市,根据拼音进行排序

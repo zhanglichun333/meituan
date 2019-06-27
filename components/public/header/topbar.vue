@@ -4,11 +4,6 @@
     <div class="h-geo">
       <i class="el-icon-location">{{$store.state.geo.position.city}}</i>
       <nuxt-link class="changeCity" to="changeCity">切换城市</nuxt-link>
-      [
-      <a href="http://">深圳</a>
-      <a href="http://">香港</a>
-      <a href="http://">上海</a>
-      ]
     </div>
     <div class="h-user">
       <template v-if="user">
