@@ -1,5 +1,5 @@
 # meituan-app
-# 技术栈
+## 技术栈
 - 前端
   + 初始化项目: Nuxt.js
   + 路由控制/拦截: vue-router
@@ -17,7 +17,7 @@
   + 数据库操作: Mongoose
   + 缓存工具: Redis
   + 高德地图web服务api接口
- # 美团首页+search搜索+侧边导航栏+产品列表
- # 注册(Nodemailer)
- # 登录(Passport)
- # 切换城市
+ ## 美团首页+search搜索+侧边导航栏+产品列表
+ ## 注册(Nodemailer)
+ ## 登录(Passport)
+ ## 切换城市
