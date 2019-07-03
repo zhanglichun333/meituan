@@ -1,4 +1,4 @@
-# meituan-app
+# meituan
 ## 1. 主要完成了四个页面
 ### 1.1 美团首页(城市定位+search搜索+侧边导航栏+产品列表)
 ![image](https://github.com/zhanglichun333/meituan/blob/master/assets/img/all.gif)
