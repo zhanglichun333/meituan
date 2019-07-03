@@ -18,6 +18,7 @@
   + 缓存工具: Redis
   + 高德地图web服务api接口
  ## 美团首页+search搜索+侧边导航栏+产品列表
+![image](https://github.com/zhanglichun333/meituan/blob/master/assets/img/ezgif.com-optimize (2).gif)
  ## 注册(Nodemailer)
  ## 登录(Passport)
  ## 切换城市
